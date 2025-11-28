@@ -60,7 +60,14 @@
                 }
                 else if (valaszt == "3")
                 {
-                    //3
+                    Console.Clear();
+                    foreach(string tel in telefonszamok)
+                    {
+                        if (tel.Length == 12)
+                        {
+                            Console.WriteLine(tel);
+                        }
+                    }
                 }
                 else if (valaszt == "4")
                 {
