@@ -128,11 +128,18 @@
                 }
                 else if (valaszt == "7")
                 {
-                    //7
+                    Console.Clear();
+                    foreach(string tel in telefonszamok)
+                    {
+                        if (tel[0] == '0' && tel[1] == '6')
+                        {
+                            Console.WriteLine(tel);
+                        }
+                    }
                 }
                 else if (valaszt == "8")
                 {
-                    //8
+                    
                 }
                 else
                 {
