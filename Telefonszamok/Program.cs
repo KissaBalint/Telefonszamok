@@ -89,7 +89,14 @@
                 }
                 else if (valaszt == "5")
                 {
-                    //5
+                    Console.Clear();
+                    foreach(string tel in telefonszamok)
+                    {
+                        if (tel.Contains('6'))
+                        {
+                            Console.WriteLine(tel);
+                        }
+                    }
                 }
                 else if (valaszt == "6")
                 {
