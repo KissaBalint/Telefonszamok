@@ -100,7 +100,31 @@
                 }
                 else if (valaszt == "6")
                 {
-                    //6
+                    Console.Clear();
+                    foreach(string tel in telefonszamok)
+                    {
+                        bool jo = true;
+                        bool jo_plusz = true;
+                        if (tel.Contains("+"))
+                        {
+                            if (tel[0] == '+')
+                            {
+                                jo_plusz = false;
+                            }
+                        }
+                        foreach(char ch in tel)
+                        {
+                            
+                            if (!char.IsDigit(ch))
+                            {
+                                jo = false;
+                            }
+                        }
+                        if (jo == jo_plusz)
+                        {
+                            Console.WriteLine(tel);
+                        }
+                    }
                 }
                 else if (valaszt == "7")
                 {
