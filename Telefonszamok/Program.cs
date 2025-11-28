@@ -34,7 +34,11 @@
                 }
                 else if(valaszt == "1")
                 {
-                    //1
+                    Console.Clear();
+                    foreach(string tel in telefonszamok)
+                    {
+                        Console.WriteLine(tel);
+                    }
                 }
                 else if (valaszt == "2")
                 {
