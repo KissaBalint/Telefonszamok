@@ -139,7 +139,12 @@
                 }
                 else if (valaszt == "8")
                 {
-                    
+                    Console.Clear();
+                    foreach(string tel in telefonszamok)
+                    {
+                        if(tel.Contains('(') || tel.Contains(')'))
+                             Console.WriteLine(tel); 
+                    }
                 }
                 else
                 {
