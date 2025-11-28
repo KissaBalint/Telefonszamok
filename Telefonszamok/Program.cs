@@ -42,7 +42,21 @@
                 }
                 else if (valaszt == "2")
                 {
-                    //2
+                    Console.Clear();
+                    foreach(string tel in telefonszamok)
+                    {
+                        bool jo = true;
+
+                        foreach(char ch in tel)
+                        {
+                            if (!char.IsDigit(ch))
+                                jo = false;
+                        }
+                        if (jo)
+                        {
+                            Console.WriteLine(tel);
+                        }
+                    }
                 }
                 else if (valaszt == "3")
                 {
